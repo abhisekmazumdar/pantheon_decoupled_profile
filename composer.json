@@ -1,0 +1,28 @@
+{
+  "name": "drupal/pantheon_decoupled_profile",
+  "description": "Suggested install profile for decoupled Drupal sites",
+  "keywords": [
+    "Drupal",
+    "decoupled"
+  ],
+  "type": "drupal-profile",
+  "license": "GPL-2.0+",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:pantheon-systems/pantheon_decoupled.git"
+    }
+  ],
+  "require": {
+    "drupal/pantheon_decoupled": "dev-main"
+  },
+  "minimum-stability": "dev",
+  "homepage": "https://www.drupal.org/project/pantheon_decoupled_profile",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/pantheon_decoupled_profile"
+  }
+}
