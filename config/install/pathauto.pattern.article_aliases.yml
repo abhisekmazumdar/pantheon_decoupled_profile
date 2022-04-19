@@ -1,0 +1,22 @@
+uuid: 7c62c933-c57a-4482-b5ad-39c4d8835269
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: article_aliases
+label: 'Article Aliases'
+type: 'canonical_entities:node'
+pattern: '/articles/[node:title]'
+selection_criteria:
+  4417e971-5da1-4026-825a-077b889b2e04:
+    id: node_type
+    negate: false
+    uuid: 4417e971-5da1-4026-825a-077b889b2e04
+    context_mapping:
+      node: node
+    bundles:
+      article: article
+selection_logic: and
+weight: -5
+relationships: {  }

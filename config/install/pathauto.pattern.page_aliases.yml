@@ -1,0 +1,22 @@
+uuid: 98b4475c-eaf3-4193-a942-37a9ce1dbb28
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: page_aliases
+label: 'Page Aliases'
+type: 'canonical_entities:node'
+pattern: '/pages/[node:title]'
+selection_criteria:
+  6fade4aa-f2b9-4eaa-ac17-2e49250db885:
+    id: node_type
+    negate: false
+    uuid: 6fade4aa-f2b9-4eaa-ac17-2e49250db885
+    context_mapping:
+      node: node
+    bundles:
+      page: page
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -7,6 +7,7 @@ dependencies:
   - drupal:media
   - drupal:media_library
   - pantheon_decoupled:pantheon_decoupled
+  - pathauto:pathauto
 
 themes:
   - gin
