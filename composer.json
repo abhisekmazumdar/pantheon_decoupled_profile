@@ -22,5 +22,12 @@
   "homepage": "https://www.drupal.org/project/pantheon_decoupled_profile",
   "support": {
     "issues": "https://www.drupal.org/project/issues/pantheon_decoupled_profile"
+  },
+  "extra": {
+    "patches": {
+      "drupal/core": {
+        "1356276#686: Allow profiles to define a base/parent profile": "https://www.drupal.org/files/issues/2022-06-17/1356276-686.patch"
+      }
+    }
   }
 }
