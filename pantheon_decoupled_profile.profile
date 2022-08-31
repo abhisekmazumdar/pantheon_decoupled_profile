@@ -5,7 +5,7 @@
  * Enables modules and site configuration for a custom site installation.
  */
 
-use Drupal\field\Entity\FieldStorageConfig;
+use Drupal\field\Entity\FieldConfig;
 
 /**
  * Implements hook_install_tasks().
@@ -28,8 +28,8 @@ function pantheon_decoupled_profile_install_tasks(&$install_state) {
  */
 function pantheon_decoupled_install_demo_content(array &$install_state) {
 
-  // Delete the default image field from article content type."
-  FieldStorageConfig::loadByName('node', 'field_image')->delete();
+  // Delete the default image field from article content type.
+  FieldConfig::loadByName('node', 'article', 'field_image')->delete();
 
   \Drupal::service('module_installer')->install(['pantheon_decoupled_example']);
 }
