@@ -2,7 +2,7 @@ name: "Pantheon Decoupled Profile"
 type: profile
 base profile: standard
 description: "Suggested install profile for decoupled Drupal sites"
-core_version_requirement: "^8.8 || ^9"
+core_version_requirement: "^8.8 || ^9 || ^10"
 dependencies:
   - drupal:media
   - drupal:media_library
