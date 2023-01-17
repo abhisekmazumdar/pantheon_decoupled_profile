@@ -31,5 +31,11 @@ function pantheon_decoupled_install_demo_content(array &$install_state) {
   // Delete the default image field from article content type.
   FieldConfig::loadByName('node', 'article', 'field_image')->delete();
 
+  // @TODO: This manual cache clearing should not be necessary,
+  // if https://www.drupal.org/project/drupal/issues/3076544 is fixed.
+  if (\Drupal::database()->schema()->tableExists('cache_discovery')) {
+    \Drupal::database()->truncate('cache_discovery')->execute();
+  }
+
   \Drupal::service('module_installer')->install(['pantheon_decoupled_example']);
 }
