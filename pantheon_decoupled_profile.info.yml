@@ -1,8 +1,40 @@
 name: "Pantheon Decoupled Profile"
 type: profile
-base profile: standard
 description: "Suggested install profile for decoupled Drupal sites"
 core_version_requirement: "^10"
+install:
+  - node
+  - history
+  - block
+  - breakpoint
+  - ckeditor5
+  - config
+  - comment
+  - contextual
+  - contact
+  - menu_link_content
+  - datetime
+  - block_content
+  - editor
+  - help
+  - image
+  - menu_ui
+  - options
+  - path
+  - page_cache
+  - dynamic_page_cache
+  - big_pipe
+  - taxonomy
+  - dblog
+  - search
+  - shortcut
+  - toolbar
+  - field_ui
+  - file
+  - views
+  - views_ui
+  - tour
+  - automated_cron
 dependencies:
   - drupal:media
   - drupal:media_library
@@ -10,4 +42,5 @@ dependencies:
   - pathauto:pathauto
 
 themes:
+  - olivero
   - gin
